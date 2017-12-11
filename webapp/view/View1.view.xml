@@ -1,0 +1,23 @@
+<mvc:View controllerName="MyTestMobile.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<t:Table rows="{/Products}" selectionBehavior="Row" selectionMode="Single" title="Produkte" visibleRowCount="10">
+						<t:columns>
+							<t:Column>
+								<t:label><Label text="Kategorie"/></t:label>
+								<t:template><Text text="{CategoryName}"/></t:template>
+							</t:Column>
+							<t:Column>
+								<t:label><Label text="Produkt"/></t:label>
+								<t:template><Text text="{Name}"/></t:template>
+							</t:Column>
+						</t:columns>
+					</t:Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
